@@ -1,0 +1,396 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueri.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="./assets/icons/letter-j.png"/>
+  </head>
+  <body>
+    <nav id="deskstop-nav">
+      <div data-aos="fade-down" data-aos-duration="2000" class="logo">
+        Joyal Jomon
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="humburger-nav">
+      <div data-aos="fade-down" data-aos-duration="1000" class="logo">
+        Joyal Jomon
+      </div>
+      <div class="humburger-menu">
+        <div class="humburger-icon" onclick="togglemenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-link">
+          <li><a href="#about" onclick="togglemenu()">About</a></li>
+          <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+          <li><a href="#project" onclick="togglemenu()">Projects</a></li>
+          <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- -----------------------------profile section------------------ -->
+    <section id="profile">
+      <div class="section-pic-container">
+        <img
+          class="pic-size"
+          src="./assets/images/sampleprofileimage.jpg"
+          alt="My picture"
+        />
+      </div>
+      <div class="section-text">
+        <p class="section-text-p1">Hello, I'm</p>
+        <h1 class="title">Joyal Jomon</h1>
+        <p class="section-text-p2">Full Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color2"
+            onclick="window.open('./assets/files/Joyal CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <!-- -------icons------- -->
+
+        <div id="social-container">
+          <a href="http://linkedin.com/in/joyaljomon" target="_blank">
+            <img
+              src="./assets/icons/linkedin.png"
+              alt="My linkedin profile"
+              class="icon"
+            />
+          </a>
+          <a href="https://github.com/joyal35" target="_blank">
+            <img
+              src="./assets/icons/github.png"
+              alt="My github profile"
+              class="icon"
+            />
+          </a>
+          <a href="https://www.instagram.com/__joyal_jomon_" target="_blank">
+            <img
+              src="./assets/icons/instagram.png"
+              alt="My instagram profile"
+              class="icon"
+            />
+          </a>
+          <a href="mailto:joyaljomon34@gmail.com" target="_blank">
+            <img src="./assets/icons/email.png" alt="My Email" class="icon" />
+          </a>
+          <a href="https://wa.me/6282973605" target="_blank">
+            <img
+              src="./assets/icons/whatsapp.png"
+              alt="my whatsapp number"
+              class="icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- -----------------------------about section--------------------- -->
+    <section id="about">
+      <p class="section-text-p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div
+              data-aos="zoom-in-down"
+              data-aos-duration="900"
+              class="details-container"
+            >
+              <img
+                src="./assets/icons/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h1>Experience</h1>
+              <p>
+                Full Stack Developer Intern <br />
+                ANJ america
+              </p>
+            </div>
+            <div
+              data-aos="zoom-in-down"
+              data-aos-duration="900"
+              class="details-container"
+            >
+              <img
+                src="./assets/icons/graduation.png"
+                alt="graduation icon"
+                class="icon"
+              />
+              <h1>Education</h1>
+              <p>
+                Plus Two <br />
+                (Higher Secondary Education in Commerce)
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              "I completed my Plus Two in 2023-24 and quickly developed a
+              passion for technology, which led me to pursue skills in
+              full-stack development. I have gained proficiency in HTML, CSS,
+              and JavaScript, focusing on building responsive and user-friendly
+              web applications. My background provides me with a strong
+              foundation in analytical thinking and problem-solving, which I
+              apply to my development work. I am continuously learning and
+              evolving in the tech field, aiming to create innovative solutions
+              for modern web challenges."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------experience---------------------- -->
+    <section id="experience">
+      <p class="section-text-p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="900"
+            class="details-container"
+          >
+            <h2 class="experience-sub-title">Front-end Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/icons/verify.png"
+                  alt="verification img"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons/verify.png"
+                  alt="verification img"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons/verify.png"
+                  alt="verification img"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="900"
+            class="details-container"
+          >
+            <h2 class="experience-sub-title">Back-end Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/icons/verify.png"
+                  alt="verification img"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------project------------------------ -->
+    <section id="project">
+      <p class="section-text-p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="900"
+            class="details-container color-container"
+          >
+            <div class="article-container">
+              <img
+                src="./assets/images/project-1.png"
+                alt=""
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="900"
+            class="details-container color-container"
+          >
+            <div class="article-container">
+              <img
+                src="./assets/images/project-2.png"
+                alt=""
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="900"
+            class="details-container color-container"
+          >
+            <div class="article-container">
+              <img
+                src="./assets/images/project-3.png"
+                alt=""
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------contact------------------------- -->
+    <section id="contact">
+      <div class="contact-form-container">
+        <p class="section-text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <form id="contactForm">
+          <div class="contact-details-container">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+              />
+              <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" placeholder="Phone" />
+              <span class="error-message" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+              <input
+                type="emaihtmll"
+                id="email"
+                name="email"
+                placeholder="Email"
+              />
+              <span class="error-message" id="emailError"></span>
+            </div>
+          </div>
+          <div class="contact-message-container">
+            <div class="spl form-group">
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Your Message"
+                rows="5"
+                cols="74"
+              ></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+          </div>
+          <div class="contact-button-container">
+            <div class="btn-container">
+              <button type="submit" class="btn submit-button">Submit</button>
+              <button onclick="clearDisplay()" class="btn submit-button">
+                Clear
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169;2024 Joyal Jomon. All Rights Reserved.</p>
+      </footer>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
