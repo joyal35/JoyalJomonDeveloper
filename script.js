@@ -63,12 +63,33 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     }
 
     if (isValid) { 
-      console.log("Name:" + name);
-      console.log("Phone:" + phone)
-      console.log("email:" + email)
-      console.log("message:" + message)
-      document.getElementById("contactForm").reset();
-      // alert("submited!")
+      const submitButton = document.querySelector("button[type='submit']");
+      submitButton.disabled = true; // Disable the button to prevent multiple clicks
+  
+      // Prepare form data
+      const formData = new FormData(event.target);
+  
+      // Submit the form using Fetch API
+      fetch("https://script.google.com/macros/s/AKfycbyoSwSntiUxB9cRg9bq2TTKQD2PWRjzGWwIVwIANbxZojR2ZPDm0N4mAGDym9XZfS0_/exec", {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.result==="success") {
+            alert("submitted successfully!");
+            event.target.reset(); // Reset the form
+          } else {
+            alert("Failed to submit form. Please try again.");
+          }
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          alert("An error occurred while submitting the form.");
+        })
+        .finally(() => {
+          submitButton.disabled = false; // Re-enable the button after completion
+        });
     }
 
   });
