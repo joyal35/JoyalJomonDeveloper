@@ -236,7 +236,7 @@ section{
 
 .btn-color1,
 .btn-color2:hover{
-    background: rgb(53, 53, 53);
+    background: rgb(0, 0, 0);
     color: white;
 }
 
@@ -355,7 +355,7 @@ article .icon{
 
 .color-container{
     border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    background: rgb(255, 255, 255);
 }
 
 .project-img{
@@ -414,8 +414,12 @@ input, textarea{
     box-sizing: border-box;
     font-size: 1rem;
     font-weight: 600;
-
 }
+::placeholder {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+  
 
 /* .contact-form-container{
     background-color: black;
