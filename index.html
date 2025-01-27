@@ -1,12 +1,26 @@
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K2G70CNJ2Z"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K2G70CNJ2Z");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>webJoyal</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueri.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" href="./assets/icons/letter-j (1).png"/>
+    <link rel="icon" href="./assets/icons/letter-j (1).png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
@@ -57,7 +71,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color2"
-            onclick="window.open('./assets/files/Joyal Jomon.pdf')"
+            onclick="window.open('./assets/files/Joyal Jomon Resume.pdf')"
           >
             Download CV
           </button>
@@ -318,17 +332,15 @@
             class="details-container color-container"
           >
             <div class="article-container">
-              <img
-                src="./assets/images/ANJ.png"
-                alt=""
-                class="project-img"
-              />
+              <img src="./assets/images/ANJ.png" alt="" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">ANJ Website</h2>
             <div class="btn-container">
-              <a href='https://www.anjamerica.com/work-with-us/' target="_blank">
-                <button class="btn btn-color2 project-btn"
-                >Preview</button>
+              <a
+                href="https://www.anjamerica.com/work-with-us/"
+                target="_blank"
+              >
+                <button class="btn btn-color2 project-btn">Preview</button>
               </a>
             </div>
           </div>
@@ -431,7 +443,7 @@
           </div>
           <div class="contact-button-container">
             <div class="btn-container">
-              <button type="submit" class="btn btn-color2" >Submit</button>
+              <button type="submit" class="btn btn-color2">Submit</button>
               <button onclick="clearDisplay()" class="btn btn-color1">
                 Clear
               </button>
